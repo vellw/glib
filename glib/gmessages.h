@@ -244,6 +244,9 @@ GLogWriterOutput g_log_writer_default          (GLogLevelFlags   log_level,
 
 GLIB_AVAILABLE_IN_2_66
 void            g_log_writer_default_set_prefer_stderr (gboolean prefer_stderr);
+GLIB_AVAILABLE_IN_2_66
+gboolean        g_log_writer_default_would_drop (GLogLevelFlags  log_level,
+                                                 const char     *log_domain);
 
 /**
  * G_DEBUG_HERE:
