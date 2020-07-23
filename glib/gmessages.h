@@ -242,6 +242,9 @@ GLogWriterOutput g_log_writer_default          (GLogLevelFlags   log_level,
                                                 gsize            n_fields,
                                                 gpointer         user_data);
 
+GLIB_AVAILABLE_IN_2_66
+void            g_log_writer_default_set_prefer_stderr (gboolean prefer_stderr);
+
 /**
  * G_DEBUG_HERE:
  *
